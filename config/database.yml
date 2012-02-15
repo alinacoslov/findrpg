@@ -33,6 +33,8 @@ production:
   password: 
   pool: 5
   timeout: 5000
+  socket: /var/run/mysqld/mysqld.sock
+  host: localhost
 
 cucumber:
   <<: *test
