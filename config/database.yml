@@ -5,26 +5,24 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql2
-  database: findrpg_development
-  username: root
-  password: 
+  database: alina_web
+  username: alina_user
+  password: Movies123 
   pool: 5
   timeout: 5000
   socket: /var/run/mysqld/mysqld.sock
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
   adapter: mysql2
-  database: findrpg_test
-  username: root
-  password: 
+  database: alina_test
+  username: alina_user
+  password: Movies123
   pool: 5
   timeout: 5000
   socket: /var/run/mysqld/mysqld.sock
-  host: localhost
 
 production:
   adapter: mysql2
@@ -34,7 +32,6 @@ production:
   pool: 5
   timeout: 5000
   socket: /var/run/mysqld/mysqld.sock
-  host: localhost
 
 cucumber:
   <<: *test
