@@ -53,3 +53,4 @@ Thumbs.db
 # RVM things #
 ##############
 .rvmrc
+config/database.yml
